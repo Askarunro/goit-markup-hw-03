@@ -122,11 +122,28 @@ body {
 
 /*section our advantages */
 
+.section-advantages {
+  padding-top: 94px;
+
+  background-color: hotpink;
+}
+
 .title-hidden {
   display: none;
 }
 
-.items-advantages .subtitle-advantages {
+.items-advantages {
+  margin-bottom: 0px;
+
+  background-color: tomato;
+}
+
+.text-advantages {
+  margin-bottom: 0px;
+}
+
+.subtitle-advantages {
+  margin-top: 0px;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.2;
@@ -134,16 +151,27 @@ body {
 }
 
 .text-advantages {
+  margin-top: 0px;
   line-height: 1.7;
 }
 
 /* section work */
 
+.section-work {
+  padding-top: 0px;
+  margin-top: 0px;
+  background-color: lawngreen;
+}
+
 .title-section {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--primary-text-color);
   text-align: center;
   font-size: 36px;
   line-height: 1.2;
+
+  background-color: green;
 }
 
 /* sectiont team */
