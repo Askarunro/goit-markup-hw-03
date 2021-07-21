@@ -14,6 +14,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
 /* Шапка */
 .header-nav {
   color: #ffffff;
@@ -43,9 +52,20 @@ body {
 }
 
 .items-nav {
+  display: inline-block;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  background-color: blanchedalmond;
+}
+
+.item-nav {
+  display: inline-block;
+}
+
+nav {
+  display: inline-block;
 }
 
 .link-nav {
@@ -62,9 +82,16 @@ body {
 }
 
 .items-cont {
+  display: inline-block;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  background-color: cornsilk;
+}
+
+.items-cont li {
+  display: inline-block;
 }
 
 .link-mail,
@@ -123,9 +150,7 @@ body {
 /*section our advantages */
 
 .section-advantages {
-  padding-top: 94px;
-
-  background-color: hotpink;
+  min-width: 1200px;
 }
 
 .title-hidden {
@@ -133,13 +158,23 @@ body {
 }
 
 .items-advantages {
-  margin-bottom: 0px;
+  margin: 0px;
+  padding: 94px 0;
+  min-width: 1200px;
 
   background-color: tomato;
 }
 
-.text-advantages {
-  margin-bottom: 0px;
+.item-advantages {
+  display: inline-block;
+  width: 270px;
+  margin-right: 0;
+
+  background-color: #188ce8;
+}
+
+.item-advantages:not(:first-child) {
+  margin-left: 30px;
 }
 
 .subtitle-advantages {
@@ -148,11 +183,16 @@ body {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+
+  background-color: blanchedalmond;
 }
 
 .text-advantages {
-  margin-top: 0px;
+  margin: 0px;
+  padding-top: 10px;
   line-height: 1.7;
+
+  background-color: azure;
 }
 
 /* section work */
@@ -161,6 +201,14 @@ body {
   padding-top: 0px;
   margin-top: 0px;
   background-color: lawngreen;
+}
+
+.section-work .title-section {
+  margin-bottom: 50px;
+}
+
+.img-box {
+  min-width: 1200px;
 }
 
 .title-section {
@@ -181,9 +229,22 @@ body {
   text-align: center;
 }
 
+.items-team {
+  margin-bottom: 0;
+  padding-bottom: 94px;
+}
+
 .item-card {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.2;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.item-card:not(:first-child) {
+  margin-left: 30px;
 }
 
 .title-card {
