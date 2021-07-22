@@ -203,24 +203,30 @@ nav {
   background-color: #188ce8;
 }
 
-/*section our advantages */
+/*SECTION OUR ADVANTAGES*/
+/* питання про відступ
+ між елементами списку 
+ margin 30 + якесь № число */
 
 .title-hidden {
   display: none;
 }
 
 .items-advantages {
+  display: flex;
+  justify-content: space-between;
   padding: 94px 0;
 
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .item-advantages {
-  display: inline-block;
-  width: 270px;
+  /* display: inline-block; */
+
+  max-width: 270px;
   margin-right: 0;
 
-  background-color: #188ce8;
+  /* background-color: #188ce8; */
 }
 
 .item-advantages:not(:first-child) {
@@ -233,14 +239,14 @@ nav {
   line-height: 1.2;
   text-transform: uppercase;
 
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
 }
 
 .text-advantages {
   padding-top: 10px;
   line-height: 1.7;
 
-  background-color: azure;
+  /* background-color: azure; */
 }
 
 /* section work */
@@ -267,7 +273,7 @@ nav {
   font-size: 36px;
   line-height: 1.2;
 
-  background-color: green;
+  /* background-color: green; */
 }
 
 /* sectiont team */
