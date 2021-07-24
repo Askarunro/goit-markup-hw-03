@@ -20,7 +20,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* відміняємо маркер списку */
@@ -36,8 +36,10 @@ img {
 /* стилі для контейнерів */
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 
 /* Скидаю глобально зовнішні відступи  */
@@ -65,12 +67,18 @@ ul {
 .nav-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-nav {
   color: var(--primary-color-white);
   border-bottom: 1px solid #ececec;
 }
+
+/* .nav-box-logo{
+  display: flex;
+  justify-content: center;
+} */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -96,7 +104,7 @@ ul {
 .items-nav {
   /* display: inline-block; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -104,13 +112,8 @@ ul {
   /* background-color: rgb(255, 205, 209); */
 }
 
-.item-mail {
-  margin-right: 50px; /*Треба пофіксити margin для tel*/
-}
-
-.box-items-cont {
-  margin-left: 331px;
-  margin-top: 32px;
+.item-nav:not(:first-child) {
+  margin-left: 50px;
 }
 
 .item-nav {
@@ -120,6 +123,7 @@ ul {
 
 nav {
   /* display: inline-block; */
+
   display: flex;
   align-items: center;
 }
@@ -137,8 +141,15 @@ nav {
   color: var(--accent-color);
 }
 
+.box-items-cont {
+  display: flex;
+  /* align-items: center; */
+}
+
 .items-cont {
-  display: inline-block;
+  display: flex;
+  /* display: inline-block; */
+
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -146,9 +157,8 @@ nav {
   /* background-color: cornsilk; */
 }
 
-.items-cont {
-  /* display: inline-block; */
-  display: flex;
+.items-cont .item-cont + .item-cont {
+  margin-left: 50px;
 }
 
 .link-mail,
@@ -163,7 +173,7 @@ nav {
   color: var(--accent-color);
 }
 
-/* section-hero */
+/* SECTION-HERO */
 
 .section-hero {
   padding-top: 200px;
@@ -177,6 +187,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -208,6 +219,10 @@ nav {
  між елементами списку 
  margin 30 + якесь № число */
 
+.section-advantages {
+  margin: 94px 0;
+}
+
 .title-hidden {
   display: none;
 }
@@ -215,7 +230,7 @@ nav {
 .items-advantages {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0;
+  /* padding: 94px 0; */
 
   /* background-color: tomato; */
 }
@@ -255,15 +270,21 @@ nav {
   /* padding-top: 0px;
   margin-top: 0px; */
   background-color: rgb(199, 209, 189);
+  margin: 0px;
 }
 
 .section-work .title-section {
   margin-bottom: 50px;
+
+  background-color: burlywood;
 }
 
 .img-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
+
+  background-color: bisque;
 }
 
 .title-section {
