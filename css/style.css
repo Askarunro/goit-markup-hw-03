@@ -337,6 +337,11 @@ nav {
 /* Footer */
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.box-footer-logo {
+  margin-bottom: 20px;
 }
 
 .color-logo.lighter {
@@ -348,6 +353,10 @@ nav {
   line-height: 1.7;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+
+.item-addr:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .location {
@@ -398,15 +407,16 @@ nav {
   margin-bottom: 94px;
 }
 
-.portfolio-list {
+/* 1 Варіант */
+/*.portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.item-portfolio {
+ .item-portfolio {
   width: 370px;
   border: 1px solid #eeeeee;
-  /* width: calc(100% - 60)/ 3); */
+   width: calc(100% - 90)/ 3); 
 }
 
 .item-portfolio:not(:nth-child(3n)) {
@@ -415,11 +425,37 @@ nav {
 
 .item-portfolio:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+} */
+
+/* по MDN */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.item-portfolio {
+  margin: 15px;
+  /* width: 370px; */
+  width: calc(100% - 90px) / 3);  
+}
+
+.item-portfolio:not(:nth-child(3n)) {
+  margin-right: 15px;
+}
+
+/.item-portfolio:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 15px;
+}
+
+.subtitle-content {
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+  padding: 20px 24px;
 }
 
 .subtitle-list {
-  margin: 20px 24px 4px 24px;
-
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
@@ -427,7 +463,6 @@ nav {
 }
 
 .description-list {
-  margin: 0px 24px 20px 24px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
