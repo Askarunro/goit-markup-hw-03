@@ -197,7 +197,7 @@ nav {
 
 .button-hero {
   margin-bottom: 200px;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
   border-radius: 4px;
   border: 0px solid #188ce8;
   background-color: var(--accent-color);
@@ -239,7 +239,7 @@ nav {
   /* display: inline-block; */
 
   max-width: 270px;
-  margin-right: 0;
+  /* margin-right: 0; */
 
   /* background-color: #188ce8; */
 }
