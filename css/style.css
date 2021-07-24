@@ -75,11 +75,6 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-/* .nav-box-logo{
-  display: flex;
-  justify-content: center;
-} */
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -94,7 +89,6 @@ ul {
 }
 
 .box-nav-links {
-  /* background-color: aquamarine; */
   min-width: 294px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -102,28 +96,18 @@ ul {
 }
 
 .items-nav {
-  /* display: inline-block; */
   display: flex;
-  /* justify-content: space-between; */
+
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
-  /* background-color: rgb(255, 205, 209); */
 }
 
 .item-nav:not(:first-child) {
   margin-left: 50px;
 }
 
-.item-nav {
-  /* display: inline-block; */
-  /* display: flex; */
-}
-
 nav {
-  /* display: inline-block; */
-
   display: flex;
   align-items: center;
 }
@@ -215,9 +199,6 @@ nav {
 }
 
 /*SECTION OUR ADVANTAGES*/
-/* питання про відступ
- між елементами списку 
- margin 30 + якесь № число */
 
 .section-advantages {
   margin: 94px 0;
@@ -230,18 +211,10 @@ nav {
 .items-advantages {
   display: flex;
   justify-content: space-between;
-  /* padding: 94px 0; */
-
-  /* background-color: tomato; */
 }
 
 .item-advantages {
-  /* display: inline-block; */
-
   max-width: 270px;
-  /* margin-right: 0; */
-
-  /* background-color: #188ce8; */
 }
 
 .item-advantages:not(:first-child) {
@@ -253,23 +226,16 @@ nav {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-
-  /* background-color: blanchedalmond; */
 }
 
 .text-advantages {
   padding-top: 10px;
   line-height: 1.7;
-
-  /* background-color: azure; */
 }
 
 /* section work */
 
 .section-work {
-  /* padding-top: 0px;
-  margin-top: 0px; */
-  /* background-color: rgb(199, 209, 189); */
   margin: 0px;
 }
 
@@ -300,9 +266,9 @@ nav {
 /* sectiont team */
 
 .section-team {
-  background-color: #f5f4fa;
-  text-align: center;
   padding: 94px 0;
+  text-align: center;
+  background-color: #f5f4fa;
 }
 
 .items-team {
