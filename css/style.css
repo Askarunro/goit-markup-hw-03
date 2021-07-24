@@ -401,6 +401,7 @@ nav {
 .item-portfolio {
   width: 370px;
   border: 1px solid #eeeeee;
+  /* width: calc(100% - 60)/ 3); */
 }
 
 .item-portfolio:not(:nth-child(3n)) {
@@ -412,6 +413,8 @@ nav {
 }
 
 .subtitle-list {
+  margin: 20px 24px 4px 24px;
+
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
@@ -419,6 +422,7 @@ nav {
 }
 
 .description-list {
+  margin: 0px 24px 20px 24px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
